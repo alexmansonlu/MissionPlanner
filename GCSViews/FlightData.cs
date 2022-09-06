@@ -55,7 +55,7 @@ namespace MissionPlanner.GCSViews
         internal PointLatLng MouseDownStart;
 
         //The file path of the selected script
-        internal string selectedscript = "";
+        internal string selectedscript = System.IO.Path.GetDirectoryName(Application.ExecutablePath)+"/read.py";
 
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         AviWriter aviwriter;

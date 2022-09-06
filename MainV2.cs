@@ -688,6 +688,7 @@ namespace MissionPlanner
                 t.SelectedIndex = 0;
 
                 MainV2.instance.FlightData.loadTabControlActions();
+                MainV2.instance.FlightData.BUT_run_script_Click(null,null);
             }
 
             if (MainV2.instance.FlightPlanner != null)
