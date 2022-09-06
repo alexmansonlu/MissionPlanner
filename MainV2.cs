@@ -688,7 +688,7 @@ namespace MissionPlanner
                 t.SelectedIndex = 0;
 
                 MainV2.instance.FlightData.loadTabControlActions();
-                MainV2.instance.FlightData.BUT_run_script_Click(null,null);
+                
             }
 
             if (MainV2.instance.FlightPlanner != null)
@@ -1148,6 +1148,10 @@ namespace MissionPlanner
             Comports.Add(comPort);
 
             MainV2.comPort.MavChanged += comPort_MavChanged;
+            if (MainV2.instance.FlightData != null)
+            {
+                MainV2.instance.FlightData.BUT_run_script_Click(null,null);
+            }
 
             // save config to test we have write access
             SaveConfig();
